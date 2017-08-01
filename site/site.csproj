@@ -127,8 +127,12 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\adr.png" />
-    <Content Include="Content\logo.png" />
+    <Content Include="Content\bg.gif" />
+    <Content Include="Content\bg_over.gif" />
+    <Content Include="Content\left_on.gif" />
+    <Content Include="Content\logo1.png" />
     <Content Include="Content\main.css" />
+    <Content Include="Content\right_on.gif" />
     <Content Include="Content\tel.png" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />

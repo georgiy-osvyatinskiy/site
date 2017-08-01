@@ -1,33 +1,135 @@
-﻿body {
+﻿body { margin: 0;
 
 }
 .header{
     width: 100%;
-    background-color: #1d6db4;
-    height: 100px;
+    background: linear-gradient(to bottom, #0e3890, #52b2fa);
+    height: 180px;
     padding: 0px;
-    margin:0px;
 }
 
 .menu{
     width: 100%;
-    background-color: #f7f9fa;
-    height: 30px;
+    
+    height: 60px;
     padding: 0px;
     margin:0px;
 }
 
 .body{
-    width: 400px;
-    height: 400px;
-    background-color: red;
+    width: 850px;
+    height: 650px;
+    background-color: #eae88f;
     padding: 0px;
-    margin:0px;
+    margin:0 0 0 200px;
 }
 .bottom{
     width:100%;
-    height: 30px;
-    background-color: #1d6db4;
+    height: 50px;
+    background: linear-gradient(to bottom, #0e3890, #52b2fa);
     padding: 0px;
     margin:0px;
+    align-content: center;
+}
+
+#bot {
+    font-size: 20px;
+    font-style:italic;
+    color: white;
+    font-weight:bold;
+    margin-left: 32%;
+    padding-top: 10px;
+    }
+
+#shap {
+    margin: 0 0 0 130px;
+}
+#shap div {
+    float:left;
+    margin-top: 30px;
+    padding-left: 40px;
+}
+
+#shap p{
+    font-family: Cambria;
+    font-size: 25px;
+    font-weight:bold;
+    color: white; 
+    font-style: italic;
+}
+
+
+
+#con{
+position:relative;
+height:56px;
+color:#E0E0E0;
+background:#143D55;
+width:100%;
+font-family: Cooper;
+}
+
+#nav{
+position:relative;
+height:32px;
+font-size:16px;
+font-style: italic;
+text-transform:uppercase;
+font-weight:bold;
+background:#fff url(/Content/bg.gif) repeat-x bottom left;
+padding:0 0 0 110px;
+}
+
+#nav ul{
+margin:0;
+padding:0;
+list-style-type:none;
+width:auto;
+float:left;
+}
+
+#nav ul li{
+display:block;
+float:left;
+margin:0 1px;
+}
+
+#nav ul li a{
+display:block;
+float:left;
+color:#EAF3F8;
+text-decoration:none;
+padding:0 0 0 20px;
+height:32px;
+}
+
+#nav ul li a span{
+padding:12px 20px 0 0;
+height:21px;
+float:left;
+}
+
+#nav ul li a:hover{
+color:#fff;
+background:transparent url(/Content/bg_over.gif) repeat-x bottom left;
+}
+
+#nav ul li a:hover span{
+display:block;
+width:auto;
+cursor:pointer;
+}
+
+#nav ul li a.current,#nav ul li a.current:hover{
+color:#fff;
+background:#1D6893 url(/Content/left_on.gif) no-repeat top left;
+line-height:275%;
+}
+
+#nav ul li a.current span{
+display:block;
+padding:0 20px 0 0;
+width:auto;
+background:#1D6893 url(/Content/right_on.gif) no-repeat top right;
+height:32px;
 }
