@@ -5,15 +5,29 @@
     width: 100%;
     background-color: #1d6db4;
     height: 100px;
+    padding: 0px;
+    margin:0px;
 }
 
 .menu{
     width: 100%;
     background-color: #f7f9fa;
     height: 30px;
+    padding: 0px;
+    margin:0px;
 }
 
+.body{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    padding: 0px;
+    margin:0px;
+}
 .bottom{
     width:100%;
-
+    height: 30px;
+    background-color: #1d6db4;
+    padding: 0px;
+    margin:0px;
 }
