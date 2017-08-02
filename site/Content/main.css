@@ -26,7 +26,7 @@
 .bottom{
     width:100%;
     height: 50px;
-    background: linear-gradient(to bottom, #0e3890, #52b2fa);
+    background: linear-gradient(to bottom, #52b2fa, #0e3890);
     padding: 0px;
     margin:0px;
     align-content: center;
