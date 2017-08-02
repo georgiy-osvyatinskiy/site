@@ -120,21 +120,41 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Template.Master.cs">
+      <DependentUpon>Template.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Template.Master.designer.cs">
+      <DependentUpon>Template.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Content Include="Content\adr.png" />
-    <Content Include="Content\bg.gif" />
-    <Content Include="Content\bg_over.gif" />
-    <Content Include="Content\left_on.gif" />
-    <Content Include="Content\logo1.png" />
+    <Content Include="Content\adr1.png" />
+    <Content Include="Content\fon.png" />
+    <Content Include="Content\logo.png" />
     <Content Include="Content\main.css" />
-    <Content Include="Content\right_on.gif" />
     <Content Include="Content\tel.png" />
+    <Content Include="Content\tel1.png" />
     <Content Include="Global.asax" />
+    <Content Include="image\12db56093d56c06b364d1a2ebb31b2c9.png" />
+    <Content Include="image\5790a9ebd334d1560d17c159.png" />
+    <Content Include="image\9708529.png" />
+    <Content Include="image\bk-ana.png" />
+    <Content Include="image\Mist-PNG-Clipart.png" />
+    <Content Include="image\Smoke-Effect-PNG-File.png" />
+    <Content Include="image\smoke_and_haze_cloud_cover_stock_photo__png_5_by_annamae22-d81bwsv.png" />
+    <Content Include="Pages\Home.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -156,6 +176,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Template.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\Template.Master" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

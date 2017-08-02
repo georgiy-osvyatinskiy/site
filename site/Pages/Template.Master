@@ -1,18 +1,23 @@
-﻿<!DOCTYPE html>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="site.Pages.Template" %>
+
+<!DOCTYPE html>
 
 <html>
-<head>
+<head runat="server">
     <meta name="viewport" content="width=device-width" />
     <title>БМ-сервис - все для Ваших любимых коров.</title>
     <link href="~/Content/main.css" type="text/css" rel="stylesheet"/>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
 </head>
 <body>
+
     <div class="header">
         <div id="shap">
-            <div style="margin-top: 70px;"><img src="~/Content/tel.png"></div>
+            <div style="margin-top: 70px;"><img src="/Content/tel1.png"></div>
             <div><p class="shap">8-800-100-56-30 <br>Звонок по России <br> бесплатный</p></div>
-            <div style="margin-top: -2px; position:static"><img src="~/Content/logo1.png" /></div>
-            <div style="margin-top: 70px;"><img src="~/Content/adr.png"></div>
+            <div style="margin-top: -2px; position:static"><img src="/Content/logo.png" /></div>
+            <div style="margin-top: 70px;"><img src="/Content/adr1.png"></div>
             <div><p>Липецк,<br> ул. Мичурина, <br> д.28, корпус «Е»</p></div>
         </div>   
     </div>
@@ -27,13 +32,19 @@
             <div><a href="#"><span>Контакты</span></a></div>
    </div>
  
-    <div class="body">
-        @RenderBody()
+  <form id="body" runat="server">
 
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
     </div>
+    </form>
 
     <div class="bottom">
         <div id="bot"> OOO «БМ-сервис» ,  Все права защищены, 2017.</div>
     </div>
+
+    
 </body>
 </html>
