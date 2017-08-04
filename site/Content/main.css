@@ -5,25 +5,28 @@ body {
     margin: 0;
 }
 .header{
-    width: 100%;
     background-color: #1d6db4;
     height: 100px;
     padding: 0px;
     margin:0px;
     border: none;
+    min-width:100%;
+}
+}
+.middle{
+    float:left;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width:auto;
 }
 
-.header-side{
-    width: auto;
+.middle-side{
+    width:395px;
     height:100%;
-    background-color: yellow;
-    display: inline;
+    float: left;
 }
 
-.header-middle{
-    width: 500px;
-    height: auto;
-    display: inline;
+.tel{
+    letter-spacing: 2px;
 }
 
 .menu{
