@@ -31,34 +31,33 @@
 
                         /* Меню */
 #menu {
-    height: 80px;
-    overflow-x: hidden;
+    height: 50px;
 }
-#menu div {
-    background: radial-gradient(circle,#52b2fa, #3467d1); 
-    border-radius: 15px;
-    padding: 15px; 
-    float: left; 
-    width: 130px; 
-    height: 30px;
-    font-size: 21px;
-    font-weight: bold;
-    color: white;
-    margin-left: 15px;
-    margin-top: 10px;
-    text-align: center;
-   }
 
+#menu ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 15%; /*убираем отступы*/
+  
+  background:#e2e2e2; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+  height: 50px; /*задаем высоту*/
+}
 #menu a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#e2e2e2; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+  color:#000000; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  font-weight:bold;
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+ /* border-right: 2px solid #bdbdbd; /*добавляем бордюр справа*/
 }
-#menu a:active {
-    color: #0e3890;  
-    text-decoration:underline;         
+#menu a:hover {
+  background:#52b2fa;/*добавляем эффект при наведении*/
 }
-#menu a:hover{
-    color: #0e3890;
+#menu li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
 }
 
                     /* Тело */

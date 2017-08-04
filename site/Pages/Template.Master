@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>БМ-сервис - все для Ваших любимых коров.</title>
     <link href="~/Content/main.css" type="text/css" rel="stylesheet"/>
+    
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -23,21 +24,25 @@
     </div>
     
     <div id="menu">
-            <div><a href="#">Главная</a></div>
-            <div><a href="#"><span>Услуги</span></a></div>
-            <div><a href="#"><span>Продукция</span></a></div>
-            <div><a href="#"><span>Партнеры</span></a></div>
-            <div><a href="#"><span>Клиенты</span></a></div>
-            <div><a href="#"><span>Прайс-лист</span></a></div>
-            <div><a href="#"><span>Контакты</span></a></div>
+        <ul>
+            <li><a href="/Pages/Home.aspx">ГЛАВНАЯ</a></li>
+            <li><a href="#">УСЛУГИ</a></li>
+            <li><a href="#">ПРОДУКЦИЯ</a></li>
+            <li><a href="#">ПАРТНЕРЫ</a></li>
+            <li><a href="#">КЛИЕНТЫ</a></li>
+            <li><a href="#">ПРАЙС_ЛИСТЫ</a></li>
+            <li><a href="/Pages/Contacts.aspx"">КОНТАКТЫ</a></li>
+       </ul>
    </div>
  
   <form id="body" runat="server">
 
     <div>
         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-        
-        </asp:ContentPlaceHolder>
+
+       
+       
+             </asp:ContentPlaceHolder>
     </div>
     </form>
 
