@@ -1,6 +1,4 @@
-﻿body { margin: 0;
-
-}
+﻿
 
                         /* Шапка */
 .header{
@@ -61,23 +59,39 @@
 }
 
                     /* Тело */
+body {
+    margin: 0;
+   /* background-image: url(/images/fon3.png);*/
+    background-image:url(/images/fon3.png);
+    background-repeat:no-repeat;
+    background-size: 100%100%;
+    background-attachment: fixed;
+    height:100%;
+}   
+
 #body{
-    width: 850px;
-    height: 650px;
-    background-image:url(/Content/fon.png);
-    background-size: 100% 100%;
-    pacity: 0.4;
-    padding: 0px;
-    margin:0 0 0 200px;
+    /*width: 883px;*/
+    width: 100%;
+    padding: 0px;  
+    float:left;
+    min-height:100%;
+}
+#body_t{
+    width: 883px;
+    margin-left:200px;
+}
+                    /* Подвал */
+#substrate-footer {
+    height:160px;
 }
 
-                    /* Подвал */
 .bottom{
+    clear:left;
     width:100%;
     height: 50px;
     background: linear-gradient(to bottom, #52b2fa, #0e3890);
     padding: 0px;
-    margin:0px;
+    left: 0; bottom: 0px; /* Левый нижний угол */
     align-content: center;
 }
 
@@ -91,6 +105,39 @@
     }
 
                     /* Другое... */
+#partners {
+    border: 5px outset;
+    border-spacing: 7px 5px;
+    border-color:#67c1de;
+}
+#partners tr {
+    height:200px; 
+    font-size: 21px;  
+    line-height:1.3;  
+}
+#partners td{
+    background-color: #caebef;
+}
 
+#clientele td {
+    
+    font-size: 21px;  
+    line-height:1.5;
+}
 
+#price{
+    font-size:22px;
+    line-height:2;
+    color:#2d25ed;
+}
+#price a{
+    color:#2d25ed;
+    font-size: 24px;
+    font-weight:bold;
+}
+#services{
+    font-size: 22px;
+    
+    line-height:2.5;
+}
 

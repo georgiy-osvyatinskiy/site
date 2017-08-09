@@ -120,6 +120,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Clientele.aspx.cs">
+      <DependentUpon>Clientele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Clientele.aspx.designer.cs">
+      <DependentUpon>Clientele.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Contacts.aspx.cs">
       <DependentUpon>Contacts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -133,6 +140,27 @@
     </Compile>
     <Compile Include="Pages\Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Partners.aspx.cs">
+      <DependentUpon>Partners.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Partners.aspx.designer.cs">
+      <DependentUpon>Partners.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Price_lists.aspx.cs">
+      <DependentUpon>Price_lists.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Price_lists.aspx.designer.cs">
+      <DependentUpon>Price_lists.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Services.aspx.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Services.aspx.designer.cs">
+      <DependentUpon>Services.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Template.Master.cs">
       <DependentUpon>Template.Master</DependentUpon>
@@ -155,15 +183,51 @@
     <Content Include="Content\tel.png" />
     <Content Include="Content\tel1.png" />
     <Content Include="Global.asax" />
+    <Content Include="images\1.png" />
+    <Content Include="images\2.png" />
+    <Content Include="images\3.png" />
+    <Content Include="images\4.png" />
+    <Content Include="images\5.png" />
+    <Content Include="images\6.png" />
+    <Content Include="images\7.png" />
+    <Content Include="images\8.png" />
+    <Content Include="images\agritubel.jpg" />
+    <Content Include="images\animat.jpg" />
     <Content Include="images\bg.png" />
+    <Content Include="images\Bioretagri.jpg" />
+    <Content Include="images\bos_obb_label01.png" />
+    <Content Include="images\boumatic.jpg" />
+    <Content Include="images\clearan.jpg" />
     <Content Include="images\close-hover.png" />
     <Content Include="images\close.png" />
+    <Content Include="images\datamars.jpg" />
+    <Content Include="images\default-thumb.jpg" />
     <Content Include="images\divider.png" />
+    <Content Include="images\emily.jpg" />
     <Content Include="images\envelope-1.png" />
     <Content Include="images\envelope-2.png" />
     <Content Include="images\envelope.png" />
+    <Content Include="images\Fabdec.jpg" />
+    <Content Include="images\fdt.jpg" />
+    <Content Include="images\fon3.png" />
+    <Content Include="images\fon4.jpg" />
+    <Content Include="images\jd_manufacturing.jpg" />
+    <Content Include="images\jourdain.jpg" />
+    <Content Include="images\kvk_hydra_klov.jpg" />
+    <Content Include="images\la_buvette.jpg" />
+    <Content Include="images\Marker2.png" />
+    <Content Include="images\mini.png" />
+    <Content Include="images\Munters-protect.jpg" />
+    <Content Include="images\patz.jpg" />
+    <Content Include="images\sanoreal.jpg" />
+    <Content Include="images\secco.jpg" />
+    <Content Include="images\teg.jpg" />
+    <Content Include="Pages\Clientele.aspx" />
     <Content Include="Pages\Contacts.aspx" />
     <Content Include="Pages\Home.aspx" />
+    <Content Include="Pages\Partners.aspx" />
+    <Content Include="Pages\Price_lists.aspx" />
+    <Content Include="Pages\Services.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -190,8 +254,21 @@
     <Content Include="Pages\Template.Master" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\config_mail.php" />
-    <Content Include="Content\sendletter.php" />
+    <Content Include="Content\config_mail.php">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\sendletter.php">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Прайс_-CLEARAN-_-2017.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\перчатки_2016.pdf" />
+    <Content Include="Content\Прайс_-Салфетки-_-2017.pdf" />
+    <Content Include="Content\Прайс_-Санорил-_-2017.pdf" />
+    <Content Include="Content\фильтры_2017.pdf" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
