@@ -176,6 +176,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\adr1.png" />
+    <Content Include="Content\favicon.png" />
     <Content Include="Content\fon.png" />
     <Content Include="Content\logo.png" />
     <Content Include="Content\main.css" />
@@ -222,6 +223,7 @@
     <Content Include="images\sanoreal.jpg" />
     <Content Include="images\secco.jpg" />
     <Content Include="images\teg.jpg" />
+    <Content Include="images\up-arrow.png" />
     <Content Include="Pages\Clientele.aspx" />
     <Content Include="Pages\Contacts.aspx" />
     <Content Include="Pages\Home.aspx" />

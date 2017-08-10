@@ -8,6 +8,32 @@
     <title>БМ-сервис - все для Ваших любимых коров.</title>
     <link href="~/Content/main.css" type="text/css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="/Content/modal-contact-form.css" />
+    <link rel="shortcut icon" href="/Content/favicon.png" type="image/png">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // hide #back-top first
+            $("#back-top").hide();
+ 
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+                // scroll body to 0px on click
+                $('#back-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+        });
+        </script>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -16,10 +42,11 @@
     <div class="header">
         <div id="shap">
             <div style="margin-top: 70px;"><img src="/Content/tel1.png"></div>
-            <div><p class="shap">8-800-100-56-30 <br>Звонок по России <br> бесплатный</p></div>
+            <div><p class="shap" style="line-height:1;"><span style="font-size:36px;">8-800-100-56-30</span> <br>
+                <span style="font-size:20px; font-weight:normal; top:-10px;">Звонок по России бесплатный</span></p></div>
             <div style="margin-top: -2px; position:static"><img src="/Content/logo.png" /></div>
             <div style="margin-top: 70px;"><img src="/Content/adr1.png"></div>
-            <div><p>Липецк,<br> ул. Мичурина, <br> д.28, корпус «Е»</p></div>
+            <div><p>Липецк, ул. Мичурина, <br> д.28, корпус «Е»</p></div>
         </div>   
     </div>
     
@@ -60,6 +87,12 @@
 		</div>
 		<div id="fade" class="black-overlay"></div>	
     </div>
+
+      <!--Кнопка вверх -->
+      <p id="back-top">
+		<a href="#top"><span></span></a>
+	</p>
+
     </form>
   </div>
 

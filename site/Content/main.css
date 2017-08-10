@@ -10,7 +10,7 @@
 }
 
 #shap {
-    margin: 0 0 0 130px;
+    margin: 0 0 0 50px;
 }
 #shap div {
     float:left;
@@ -21,7 +21,7 @@
 
 #shap p{
     font-family: Cambria;
-    font-size: 25px;
+    font-size: 30px;
     font-weight:bold;
     color: white; 
     font-style: italic;
@@ -93,6 +93,7 @@ body {
     padding: 0px;
     left: 0; bottom: 0px; /* Левый нижний угол */
     align-content: center;
+    
 }
 
 #bot {
@@ -104,7 +105,53 @@ body {
     padding-top: 10px;
     }
 
+                    /* Кнопка вверх */
+#back-top {
+	position: fixed;
+	bottom: 50px;
+	left: 30px;
+} 
+ 
+#back-top a {
+	width: 108px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #bbb;
+ 
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+/* arrow icon (span tag) */
+#back-top span {
+	width: 108px;
+	height: 108px;
+	display: block;
+	margin-bottom: 7px;
+	background: /*#ddd*/ #b9dde9 url(/images/up-arrow.png) no-repeat center center;
+    
+	/* rounded corners */
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+ 
+	/* transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover span {
+	background-color: #29AEE3;/*#44a2d1;#777;*/
+}
+
                     /* Другое... */
+
+                    /* Партнеры */
 #partners {
     border: 5px outset;
     border-spacing: 7px 5px;
@@ -118,13 +165,13 @@ body {
 #partners td{
     background-color: #caebef;
 }
-
+                    /* Клиенты */
 #clientele td {
     
     font-size: 21px;  
     line-height:1.5;
 }
-
+                    /* Прайс-листы*/
 #price{
     font-size:22px;
     line-height:2;
@@ -135,9 +182,9 @@ body {
     font-size: 24px;
     font-weight:bold;
 }
+                    /* Услуги */
 #services{
     font-size: 22px;
-    
     line-height:2.5;
 }
 
