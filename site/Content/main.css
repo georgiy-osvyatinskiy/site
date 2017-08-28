@@ -136,9 +136,9 @@ body {
 	background: /*#ddd*/ #b9dde9 url(/images/up-arrow.png) no-repeat center center;
     
 	/* rounded corners */
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 15px;
+	-webkit-border-radius: 65px;
+	-moz-border-radius:65px;
+	border-radius: 65px;
  
 	/* transition */
 	-webkit-transition: 1s;
