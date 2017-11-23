@@ -198,6 +198,11 @@
     <Content Include="images\Bioretagri.jpg" />
     <Content Include="images\bos_obb_label01.png" />
     <Content Include="images\boumatic.jpg" />
+    <Content Include="images\cat1.png" />
+    <Content Include="images\cat2.png" />
+    <Content Include="images\cat3.png" />
+    <Content Include="images\cat4.png" />
+    <Content Include="images\cat9.png" />
     <Content Include="images\clearan.jpg" />
     <Content Include="images\close-hover.png" />
     <Content Include="images\close.png" />
@@ -224,6 +229,7 @@
     <Content Include="images\secco.jpg" />
     <Content Include="images\teg.jpg" />
     <Content Include="images\up-arrow.png" />
+    <Content Include="images\w256h2561339252439BoxBlue1.png" />
     <Content Include="Pages\Clientele.aspx" />
     <Content Include="Pages\Contacts.aspx" />
     <Content Include="Pages\Home.aspx" />

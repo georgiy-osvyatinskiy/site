@@ -35,7 +35,7 @@
 #menu ul {
   list-style: none; /*убираем маркеры списка*/
   margin: 0; /*убираем отступы*/
-  padding-left: 15%; /*убираем отступы*/
+  padding-left: 21%; /*убираем отступы*/
   
   background:#e2e2e2; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
   height: 50px; /*задаем высоту*/
@@ -56,6 +56,7 @@
 }
 #menu li {
   float:left; /*Размещаем список горизонтально для реализации меню*/
+  
 }
 
                     /* Тело */
@@ -187,4 +188,32 @@ body {
     font-size: 22px;
     line-height:2.5;
 }
+
+                    /*Каталоги*/
+
+#catalog{
+      border: 2px;
+      width: 200px;
+      height:200px;
+      /*background-color: #6C7FFA; */
+      background-image: url(работа/w256h2561339252439BoxBlue1.png);
+      float:left;
+      margin-left: 20px;
+      opacity: 0.5;
+       font-size: 28px;
+       font-style: italic;
+       font-weight: bold;
+       text-decoration: none;
+       color: black;
+       padding:20px 0px 0px 0px ;
+    }
+
+   #catalog:hover {opacity: 1;}
+
+    #cat{
+      opacity: 0;
+      margin-top: -115px;
+    }
+
+   #catalog:hover #cat {opacity: 1;}
 

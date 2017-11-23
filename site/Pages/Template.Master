@@ -44,7 +44,7 @@
             <div style="margin-top: 70px;"><img src="/Content/tel1.png"></div>
             <div><p class="shap" style="line-height:1;"><span style="font-size:36px;">8-800-100-56-30</span> <br>
                 <span style="font-size:20px; font-weight:normal; top:-10px;">Звонок по России бесплатный</span></p></div>
-            <div style="margin-top: -2px; position:static"><img src="/Content/logo.png" /></div>
+            <div style="margin-top: -2px; position:static"><a href="/Pages/Home.aspx"><img src="/Content/logo.png" /></a></div>
             <div style="margin-top: 70px;"><img src="/Content/adr1.png"></div>
             <div><p>Липецк, ул. Мичурина, <br> д.28, корпус «Е»</p></div>
         </div>   
@@ -53,7 +53,7 @@
     <div id="menu">
         <ul>
             <li><a href="/Pages/Home.aspx">ГЛАВНАЯ</a></li>
-            <li><a href="/Pages/Services.aspx">УСЛУГИ</a></li>
+            <!--<li><a href="/Pages/Services.aspx">УСЛУГИ</a></li>-->
             <li><a href="#">ПРОДУКЦИЯ</a></li>
             <li><a href="/Pages/Partners.aspx">ПАРТНЕРЫ</a></li>
             <li><a href="/Pages/Clientele.aspx">КЛИЕНТЫ</a></li>
