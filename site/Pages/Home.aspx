@@ -31,17 +31,17 @@
 
    #catalog:hover #cat {opacity: 1;}
 </style>
-    <center><div style="background-image: url(/images/bos_obb_label01.png); width: 300px; height:80px; background-size:100%100%; ">
-    <h2 style="color:#000000; font-weight:bold; margin-left:10px; padding-top:25px;">О КОМПАНИИ</h2></div></center>
-
+        
+     <center><h2 style="color:#000000; font-weight:bold; margin-left:10px; padding-top:25px;">О КОМПАНИИ</h2></center>
 
     <p style=" font-size: 21px;  line-height:1.3;">ООО «БМ-сервис» — это динамично развивающаяся компания с высококвалифицированными специалистами, имеющими опыт работы в молочном животноводстве более 10 лет.
-    <br><br>Мы являемся официальным партнером <a href="/Pages/Partners.aspx">фирм производителей</a> товаров для современных молочных ферм.
-    <br><br>Нашим стратегическим партнером является компания «BouMatic» — признанный лидер в производстве оборудования и технологии промышленного доения.
+    <br><br>Мы являемся официальным партнером <a href="/Pages/Partners.aspx" style="color:#2131e0;">фирм производителей</a> товаров для современных молочных ферм.
+    <br><br>Нашим стратегическим партнером является компания <a href="#" style="color:#2131e0;">«BouMatic»</a> — признанный лидер в производстве оборудования и технологии промышленного доения.
     <br><br>Продукция, которую мы предлагаем, сочетает в себе высокое качество и приемлемую цену, что так необходимо в современных условиях ведения хозяйства.
     </p>
 
-
+       <!--КАТАЛОГИ В ТАБЛИЦЕ-->
+    <!--
     <center><table>
   <tr>
     <td><a href="#"><div id="catalog"><center><br><br>Расходные материалы<div id="cat"><img src="\images\cat1.png"></div></center></div></a></td>
@@ -49,21 +49,32 @@
   </tr>
   <tr>
     <td><a href="#"><div id="catalog"><center><br><br>Содержание животных<div id="cat"><img src="\images\cat2.png"></div></center></div></a></td>
-    <td><a href="#"><div id="catalog"><center><br><br>Гарантийное обслуживание<div id="cat"><img src="\images\cat9.png"></div></center></div></a></td>
+    <td><a href="/Pages/Services.aspx"><div id="catalog"><center><br><br>Гарантийное обслуживание<div id="cat"><img src="\images\cat9.png"></div></center></div></a></td>
   </tr>
 </table></center>
-    
-     <!--ГОРИЗОНТАЛЬНЫЙ ВАРИАНТ-->
-    <!--
-     <a href="#"><div id="catalog"><center><br>Расходные материалы<div id="cat"><img src="\images\cat1.png"></div></center></div></a>
-     <a href="#"><div id="catalog"><center><br>Доильное оборудование<div id="cat"><img src="\images\cat4.png"></div></center></div> </a>
-     <a href="#"><div id="catalog"><center><br>Содержание животных<div id="cat"><img src="\images\cat2.png"></div></center></div></a>
-     <a href="#"><div id="catalog"><center><br>Гарантийное обслуживание<div id="cat"><img src="\images\cat9.png"></div></center></div></a>
-        -->
+    -->
+   
+    <h2>Предлагаемые продукты:</h2>
+    <ul type="circle" style=" font-size: 21px;">
+        <li>оборудование для доения коров,</li>
+        <li>оборудование для содержания коров,</li>
+        <li>моющие средства для молокопроводов, доильных залов, молочных холодильных танков,</li>
+        <li>средства обработки вымени до и после доения,</li>
+        <li>расходные материалы,</li>
+        <li>навесные приспособления для техники.</li>
+    </ul>
 
+
+    
+
+     <!--ГОРИЗОНТАЛЬНЫЙ ВАРИАНТ-->
+    
+     <a href="#"><div id="catalog"><center><br><br>Доильное оборудование<div id="cat"><img src="\images\cat4.png"></div></center></div> </a>
+     <a href="#"><div id="catalog"><center><br><br>Расходные материалы<div id="cat"><img src="\images\cat1.png"></div></center></div></a>
+     <a href="#"><div id="catalog"><center><br><br>Содержание животных<div id="cat"><img src="\images\cat2.png"></div></center></div></a>
+     <a href="#"><div id="catalog"><center><br><br>Гарантийное обслуживание<div id="cat"><img src="\images\cat9.png"></div></center></div></a>
      
 
-    
     <p style=" font-size: 23px; color:#000000; font-weight:bold; margin-left:40px; padding-top:0px; font-style:italic;">
         Наша главная цель —  довольный клиент.</p>
     
@@ -74,7 +85,10 @@
 
     <p style=" font-size: 21px;  line-height:1.3;">
     Высокое качество поставляемых продуктов, большой опыт работы в этой отрасли, сотрудничество с ведущими производителями оборудования позволяют нашей компании предоставить качественные решения на любые пожелания наших клиентов.
-     Мы будем очень рады, если Вы окажите нам доверие и выберете ООО «БМ-сервис» в качестве Вашего нового партнера для успешного сотрудничества.
+     <br /><br />Мы будем очень рады, если Вы окажите нам доверие и выберете ООО «БМ-сервис» в качестве Вашего нового партнера для успешного сотрудничества.
     </p>
-﻿
+
+    <center><h2 style="color:#000000; font-weight:bold; margin-left:10px; padding-top:25px;">НОВОСТИ КОМПАНИИ</h2></center>
+    <center><h1 style="color:red;">НУЖНЫ КАРТИНКИ И НОВОСТИ!!!</h1></center>
+    <center><a href="#" style="color:#2131e0; text-decoration:none;"><h3 style="color:#000000; font-weight:bold; margin-left:10px; padding-top:25px;"><hr />СМОТРЕТЬ ВСЕ НОВОСТИ<hr /></h3></a></center>
 </asp:Content>

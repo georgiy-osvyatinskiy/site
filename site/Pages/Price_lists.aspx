@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <center><div style="background-image: url(/images/bos_obb_label01.png); width: 300px; height:80px; background-size:100%100%; ">
+    <center><div style="background-image: url(); width: 300px; height:80px; background-size:100%100%; ">
     <h2 style="color:#000000; font-weight:bold; margin-left:10px; padding-top:25px;">ПРАЙС-ЛИСТЫ</h2></div></center>
     <p id="price">
         <img src="../images/Marker2.png" /><a href="../Content/Прайс_-CLEARAN-_-2017.pdf" target="_blank">Прайс-лист на моющие средства и средства гигиены вымени Clearan</a><br />

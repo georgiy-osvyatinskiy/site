@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <center><div style="background-image: url(/images/bos_obb_label01.png); width: 300px; height:80px; background-size:100%100%; ">
+    <center><div style="background-image: url(); width: 300px; height:80px; background-size:100%100%; ">
     <h2 style="color:#000000; font-weight:bold; margin-left:10px; padding-top:25px;">КЛИЕНТЫ</h2></div></center>
 
     <br />
