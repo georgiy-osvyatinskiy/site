@@ -95,9 +95,15 @@
 
     </form>
   </div>
-
+    <!--OOO «БМ-сервис» ,  Все права защищены, 2017.-->
  <div class="bottom">
-        <div id="bot"> OOO «БМ-сервис» ,  Все права защищены, 2017.</div>
+        <div id="bot"> <a href="/Pages/Home.aspx">ГЛАВНАЯ</a>
+            
+            <a href="#">ПРОДУКЦИЯ</a>
+            <a href="/Pages/Partners.aspx">ПАРТНЕРЫ</a>
+            <a href="/Pages/Clientele.aspx">КЛИЕНТЫ</a>
+            <a href="/Pages/Price_lists.aspx">ПРАЙС-ЛИСТЫ</a>
+            <a href="/Pages/Contacts.aspx"">КОНТАКТЫ</a> </div>
     </div>
   
 </body> 
