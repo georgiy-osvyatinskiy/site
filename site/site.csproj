@@ -40,11 +40,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
@@ -116,57 +116,77 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Catalog.aspx.cs">
+      <DependentUpon>Catalog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Catalog.aspx.designer.cs">
+      <DependentUpon>Catalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\CatalogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Clientele.aspx.cs">
+    <Compile Include="Clientele.aspx.cs">
       <DependentUpon>Clientele.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Clientele.aspx.designer.cs">
+    <Compile Include="Clientele.aspx.designer.cs">
       <DependentUpon>Clientele.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Contacts.aspx.cs">
+    <Compile Include="Contacts.aspx.cs">
       <DependentUpon>Contacts.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Contacts.aspx.designer.cs">
+    <Compile Include="Contacts.aspx.designer.cs">
       <DependentUpon>Contacts.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Home.aspx.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Home.aspx.designer.cs">
-      <DependentUpon>Home.aspx</DependentUpon>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Partners.aspx.cs">
+    <Compile Include="Models\Manufacturer.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\Section.cs" />
+    <Compile Include="Models\siteDBContext.cs" />
+    <Compile Include="Models\Sub_Section.cs" />
+    <Compile Include="Partners.aspx.cs">
       <DependentUpon>Partners.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Partners.aspx.designer.cs">
+    <Compile Include="Partners.aspx.designer.cs">
       <DependentUpon>Partners.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Price_lists.aspx.cs">
+    <Compile Include="Price_lists.aspx.cs">
       <DependentUpon>Price_lists.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Price_lists.aspx.designer.cs">
+    <Compile Include="Price_lists.aspx.designer.cs">
       <DependentUpon>Price_lists.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Services.aspx.cs">
+    <Compile Include="Sec.aspx.cs">
+      <DependentUpon>Sec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sec.aspx.designer.cs">
+      <DependentUpon>Sec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services.aspx.cs">
       <DependentUpon>Services.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Services.aspx.designer.cs">
+    <Compile Include="Services.aspx.designer.cs">
       <DependentUpon>Services.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Template.Master.cs">
+    <Compile Include="Template.Master.cs">
       <DependentUpon>Template.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Pages\Template.Master.designer.cs">
+    <Compile Include="Template.Master.designer.cs">
       <DependentUpon>Template.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -175,6 +195,11 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Content Include="App_Data\siteDB.mdf" />
+    <Content Include="App_Data\siteDB_log.ldf">
+      <DependentUpon>siteDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="Catalog.aspx" />
     <Content Include="Content\adr1.png" />
     <Content Include="Content\favicon.png" />
     <Content Include="Content\fon.png" />
@@ -201,7 +226,6 @@
     <Content Include="images\cat1.png" />
     <Content Include="images\cat2.png" />
     <Content Include="images\cat3.png" />
-    <Content Include="images\cat4.png" />
     <Content Include="images\cat9.png" />
     <Content Include="images\clearan.jpg" />
     <Content Include="images\close-hover.png" />
@@ -230,13 +254,18 @@
     <Content Include="images\teg.jpg" />
     <Content Include="images\up-arrow.png" />
     <Content Include="images\w256h2561339252439BoxBlue1.png" />
-    <Content Include="Pages\Clientele.aspx" />
-    <Content Include="Pages\Contacts.aspx" />
-    <Content Include="Pages\Home.aspx" />
-    <Content Include="Pages\Partners.aspx" />
-    <Content Include="Pages\Price_lists.aspx" />
-    <Content Include="Pages\Services.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Clientele.aspx" />
+    <Content Include="Contacts.aspx" />
+    <Content Include="Index.aspx">
+      <BrowseToURL>~/Index.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Partners.aspx" />
+    <Content Include="Price_lists.aspx" />
+    <Content Include="Sec.aspx" />
+    <Content Include="Services.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -244,10 +273,6 @@
       <DependentUpon>Web.config</DependentUpon>
     </Content>
     <Content Include="Views\Web.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -259,7 +284,7 @@
     <Content Include="Views\Shared\_Template.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Pages\Template.Master" />
+    <Content Include="Template.Master" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\config_mail.php">

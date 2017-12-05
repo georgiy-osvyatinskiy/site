@@ -3,7 +3,7 @@
   ** опрделяем позиции, цвет и интенсивность затемнения  */
 .black-overlay{
 	display: none;
-	osition: fixed;
+	position: fixed;
     background-attachment: fixed;
 	top: 0%;
 	left: 0%;
@@ -178,7 +178,7 @@ input[type=text]:focus, .your-message:focus {
 
                 /* КНОПКА*/
 
-#popup__toggle{bottom:75px;right:10px;position:fixed;}
+#popup__toggle{bottom:75px;right:-8px;position:fixed;}
 .img-circle{background-color:#29AEE3;box-sizing:content-box;-webkit-box-sizing:content-box;}
 .circlephone{box-sizing:content-box;-webkit-box-sizing:content-box;border: 2px solid #29AEE3;width:150px;height:150px;bottom:-25px;right:10px;position:absolute;-webkit-border-radius:100%;-moz-border-radius: 100%;border-radius: 100%;opacity: .5;-webkit-animation: circle-anim 2.4s infinite ease-in-out !important;-moz-animation: circle-anim 2.4s infinite ease-in-out !important;-ms-animation: circle-anim 2.4s infinite ease-in-out !important;-o-animation: circle-anim 2.4s infinite ease-in-out !important;animation: circle-anim 2.4s infinite ease-in-out !important;-webkit-transition: all .5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all 0.5s;}
 .circle-fill{box-sizing:content-box;-webkit-box-sizing:content-box;background-color:#29AEE3;width:100px;height:100px;bottom:0px;right:35px;position:absolute;-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;border: 2px solid transparent;-webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;-moz-animation: circle-fill-anim 2.3s infinite ease-in-out;-ms-animation: circle-fill-anim 2.3s infinite ease-in-out;-o-animation: circle-fill-anim 2.3s infinite ease-in-out;animation: circle-fill-anim 2.3s infinite ease-in-out;-webkit-transition: all .5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all 0.5s;}

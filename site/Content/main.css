@@ -10,7 +10,7 @@
 }
 
 #shap {
-    margin: 0 0 0 50px;
+    margin-left:10%;
 }
 #shap div {
     float:left;
@@ -77,9 +77,10 @@ body {
     float:left;
     min-height:100%;
 }
+
 #body_t{
+    margin-left:22%;
     width: 883px;
-    margin-left:200px;
 }
                     /* Подвал */
 #substrate-footer {
@@ -89,7 +90,7 @@ body {
 .bottom{
     clear:left;
     width:100%;
-    height: 50px;
+    height: 60px;
     background: linear-gradient(to bottom, #52b2fa, #0e3890);
     padding: 0px;
     left: 0; bottom: 0px; /* Левый нижний угол */
@@ -98,10 +99,9 @@ body {
 }
 
 #bot {
-    font-size: 20px;
+    font-size: 12px;
     font-style:italic;
     color: white;
-    font-weight:bold;
     margin-left:20%;
     padding-top: 10px;
     }

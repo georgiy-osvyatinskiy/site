@@ -27,7 +27,6 @@ D:\Documents\GitHub\site\site\bin\System.Web.Razor.xml
 D:\Documents\GitHub\site\site\bin\System.Web.WebPages.xml
 D:\Documents\GitHub\site\site\bin\System.Web.WebPages.Deployment.xml
 D:\Documents\GitHub\site\site\bin\System.Web.WebPages.Razor.xml
-D:\Documents\GitHub\site\site\obj\Debug\site.csprojResolveAssemblyReference.cache
 D:\Documents\GitHub\site\site\obj\Debug\site.dll
 D:\Documents\GitHub\site\site\obj\Debug\site.pdb
 D:\site\site\bin\site.dll.config
@@ -126,3 +125,4 @@ D:\work\site\site\bin\System.Web.WebPages.Razor.xml
 D:\work\site\site\obj\Debug\site.csprojResolveAssemblyReference.cache
 D:\work\site\site\obj\Debug\site.dll
 D:\work\site\site\obj\Debug\site.pdb
+D:\Documents\GitHub\site\site\obj\Debug\site.csprojResolveAssemblyReference.cache
