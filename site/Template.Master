@@ -1,0 +1,232 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Template.master.cs" Inherits="site.Pages.Template" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title>БМ-сервис - все для Ваших любимых коров.</title>
+    <link href="~/Content/main.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="/Content/modal-contact-form.css" />
+    <link rel="shortcut icon" href="/Content/favicon.png" type="image/png">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+    <script src="/upup.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // hide #back-top first
+            $("#back-top").hide();
+
+            // fade in #back-top
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('#back-top').fadeIn();
+                    } else {
+                        $('#back-top').fadeOut();
+                    }
+                });
+                // scroll body to 0px on click
+                $('#back-top a').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+            });
+        });
+        UpUp.start({
+            'content-url': 'Index.aspx' // show this page to offline users
+        });
+        </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+<<<<<<< HEAD:site/Pages/Template.Master
+   
+=======
+    <center>
+>>>>>>> 8fde40444ae4a55ca8edea32787d6a1b596616fd:site/Template.Master
+    <div class="header">
+        <div id="shap">
+            <a href="callto:88001005630"><div style="margin-top: 70px;"><img src="/Content/tel1.png"></div>
+            <div><p class="shap" style="line-height:1;"><span style="font-size:36px;">8-800-100-56-30</span> <br>
+                <span style="font-size:20px; font-weight:normal; top:-10px;">Звонок по России бесплатный</span></p></div></a>
+            <div style="margin-top: -2px; position:static"><a href="/Index.aspx"><img src="/Content/logo.png" /></a></div>
+            <a target="_blank"  href="https://yandex.ru/maps/9/lipetsk/?mode=search&ll=39.577058%2C52.595583&z=17&text=улица%20Мичурина%2C%2028Е&sll=39.547521%2C52.637413&sspn=0.628967%2C0.212625">
+            <div style="margin-top: 70px;"><img src="/Content/adr1.png"></div>
+            <div><p>Липецк, ул. Мичурина, <br> д.28, корпус «Е», офис 33</p></div></a>
+        </div>   
+    </div>
+<<<<<<< HEAD:site/Pages/Template.Master
+    <center>
+    <div id="menu">
+       <ul> 
+            <li><a href="/Pages/Home.aspx">ГЛАВНАЯ</a></li>
+            <!--<li><a href="/Pages/Services.aspx">УСЛУГИ</a></li>-->
+            <li><a href="#">ПРОДУКЦИЯ</a></li>
+            <li><a href="/Pages/Partners.aspx">ПАРТНЕРЫ</a></li>
+            <li><a href="/Pages/Clientele.aspx">КЛИЕНТЫ</a></li>
+            <li><a href="/Pages/Price_lists.aspx">ПРАЙС-ЛИСТЫ</a></li>
+            <li><a href="/Pages/Contacts.aspx"">КОНТАКТЫ</a></li>
+      </ul>
+   </div>
+</center>
+     	
+
+  <div id="body"><form  runat="server">
+
+    <div id="body_t">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+       
+       
+             </asp:ContentPlaceHolder>
+        </div>  
+                                <!--ФОРМА ПИСЬМА-->
+  <div id="win1" style="display:none;">
+   <div class="overlay"></div>
+      <div class="visible">
+       <div class="close_b" onClick="getElementById('win1').style.display='none';"></div>
+        <h2>Напишите нам</h2>
+          <div class="content">
+           <form class="contact_form" action="" method="post">
+	
+            <p><label for="name">Имя:<span id="star">*</span></label>
+            <input type="text"  name="name" pattern="[А-Яа-яЁё]{2,}" placeholder="Введите ваше имя" required />
+            <span class="form_hint">Только русские буквы</span></p>
+
+            <p><label for="email">Email:<span id="star">*</span></label>
+            <input type="email" name="email" placeholder="Введите электронный адрес" required />
+            <span class="form_hint">Правильный формат "name@something.com"</span></p>
+       
+            <p><label for="message">Текст сообщения:<span id="star">*</span></label>
+            <textarea name="message" cols="40" rows="6" placeholder="Введите сообщение..." required ></textarea></p>
+		
+            <p><button class="submit" type="submit">Отправить сообщение</button></p>
+            </form>
+         </div>
+    </div>
+  </div>
+<!--****************************************************************************************************************-->
+                                     <!--ФОРМА ОБРАТНОГО ЗВОНКА-->
+     <div id="win2" style="display:none;">
+   <div class="overlay"></div>
+      <div class="visible">
+       <div class="close_b" onClick="getElementById('win2').style.display='none';"></div>
+        <h2>Заказ обратного звонка</h2>
+          <div class="content">
+           <form class="contact_form" action="" method="post">
+	        
+               <h3>Оставьте свой номер и мы перезвоним в удобное для Вас время!</h3>
+            <p><label for="name">Имя:</label>
+            <input type="text"  name="name" pattern="[А-Яа-яЁё]{2,}" placeholder="Введите ваше имя" required /></p>
+
+            <p><label for="tel">Телефон:<span id="star">*</span></label>
+            <input type="tel" name="tel" pattern="\+7\([0-9]{3}\)\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}" placeholder="Введите номер телефона" required />
+            <span class="form_hint">Правильный формат "+7(123) 456 78 90"</span></p>
+       
+            <p><label for="message">Вопрос или комментарий:</label>
+            <textarea name="message" cols="40" rows="6" placeholder="Введите сообщение..." ></textarea></p>
+		
+            <p><button class="submit" type="submit">Отправить сообщение</button></p>
+            </form>
+         </div>
+    </div>
+  </div>
+      
+         
+
+      <a class="show-btn" id="popup__toggle-mail"  onClick="getElementById('win1').removeAttribute('style');"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock-mail" style="transform-origin: center;"></div></div></a>
+      <a class="show-btn" id="popup__toggle" onclick = "getElementById('win2').removeAttribute('style');"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock" style="transform-origin: center;"></div></div></a>
+        <!--Кнопка письма-->
+ <!--       
+        <div>
+        <a class="show-btn" id="popup__toggle-mail" href = "javascript:void(0)" onclick = "document.getElementById('envelope').style.display='block';document.getElementById('fade').style.display='block'"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock-mail" style="transform-origin: center;"></div></div></a>
+		<div id="envelope" class="envelope">
+			<a class="close-btn" title="Закрыть" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='none';document.getElementById('fade').style.display='none'"></a>
+			<div class="title">Отправьте заявку для получения бесплатной квалифицированной консультации</div>
+			<form method="post" action="/Content/sendletter.php">
+				<input type="text" name="sender" onclick="this.value = '';" onfocus="this.select()" onblur="this.value=!this.value?'* Ваше Имя':this.value;" value="* Ваше Имя" class="your-name" required />
+				<input type="text" name="email" onclick="this.value = '';" onfocus="this.select()" onblur="this.value=!this.value?'* Ваш Email':this.value;" value="* Ваш Email" class="email-address" required />
+				<input type="submit" name="send" value="Отправить" class="send-message">
+			</form>
+		</div>
+		<div id="fade" class="black-overlay"></div>	
+    </div>
+ -->
+      
+      <!--Кнопка обратного звонка -->
+<!--
+=======
+        </center>
+    <center>
+    <div id="menu">
+        <ul>
+            <li><a href="/Index.aspx">ГЛАВНАЯ</a></li>
+            <!--<li><a href="/Pages/Services.aspx">УСЛУГИ</a></li>-->
+            <li><a href="/Catalog.aspx">ПРОДУКЦИЯ</a></li>
+            <li><a href="/Partners.aspx">ПАРТНЕРЫ</a></li>
+            <li><a href="/Clientele.aspx">КЛИЕНТЫ</a></li>
+            <li><a href="/Price_lists.aspx">ПРАЙС-ЛИСТЫ</a></li>
+            <li><a href="/Contacts.aspx"">КОНТАКТЫ</a></li>
+       </ul>
+   </div>
+   </center>
+
+     	
+
+  <div id="body"><form  runat="server">
+    
+    <div id="body_t" style="align-content:flex-start">
+        
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                
+        </div>
+      
+      <!--Кнопка обратного звонка 
+>>>>>>> 8fde40444ae4a55ca8edea32787d6a1b596616fd:site/Template.Master
+        <div>
+        <a class="show-btn" id="popup__toggle" href = "javascript:void(0)" onclick = "document.getElementById('envelope').style.display='block';document.getElementById('fade').style.display='block'"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock" style="transform-origin: center;"></div></div></a>
+		<div id="envelope" class="envelope">
+			<a class="close-btn" title="Закрыть" href="javascript:void(0)" onclick = "document.getElementById('envelope').style.display='none';document.getElementById('fade').style.display='none'"></a>
+			<div class="title">Отправьте заявку для получения бесплатной квалифицированной консультации</div>
+			<form method="post" action="/Content/sendletter.php">
+				<input type="text" name="sender" onclick="this.value = '';" onfocus="this.select()" onblur="this.value=!this.value?'* Ваше Имя':this.value;" value="* Ваше Имя" class="your-name" required />
+				<input type="text" name="email" onclick="this.value = '';" onfocus="this.select()" onblur="this.value=!this.value?'* Ваш Email':this.value;" value="* Ваш Email" class="email-address" required />
+				<input type="submit" name="send" value="Отправить" class="send-message">
+			</form>
+		</div>
+		<div id="fade" class="black-overlay"></div>	
+<<<<<<< HEAD:site/Pages/Template.Master
+    </div>
+-->
+
+=======
+    </div>-->
+>>>>>>> 8fde40444ae4a55ca8edea32787d6a1b596616fd:site/Template.Master
+
+      <!--Кнопка вверх -->
+      <p id="back-top">
+		<a href="#top"><span></span></a>
+	</p>
+
+    </form>
+  </div>
+    <!--OOO «БМ-сервис» ,  Все права защищены, 2017.-->
+ <div class="bottom">
+        <div id="bot"> 
+            <div style="display:inline-block;margin-right: 70px; margin-bottom:-10px;"><a style="color:white" href="/Pages/Home.aspx">ГЛАВНАЯ</a></div>
+            <div style="display:inline-block;margin-right: 70px; margin-bottom:-10px;"><a style="color:white" href="#">ПРОДУКЦИЯ</a></div>
+            <div style="display:inline-block;margin-right: 70px; margin-bottom:-10px;"><a style="color:white" href="/Pages/Partners.aspx">ПАРТНЕРЫ</a></div>
+            <div style="display:inline-block;margin-right: 70px; margin-bottom:-10px;"><a style="color:white" href="/Pages/Clientele.aspx">КЛИЕНТЫ</a></div>
+            <div style="display:inline-block;margin-right: 70px; margin-bottom:-10px;"><a style="color:white" href="/Pages/Price_lists.aspx">ПРАЙС-ЛИСТЫ</a></div>
+            <div style="display:inline-block;margin-right: 70px; margin-bottom:-10px;"><a style="color:white" href="/Pages/Contacts.aspx"">КОНТАКТЫ</a></div><br />
+            <div style="display:inline-block;margin-right: 70px; margin-top: -30px"><p style="color:white">8-800-100-56-30</p></div>
+            <div style="display:inline-block;margin-right: 70px; margin-top: -30px"><p style="color:white">Липецк, ул. Мичурина, д.28, корпус "Е", офис 33</p></div>
+        </div>
+</div>
+  
+</body> 
+</html>
