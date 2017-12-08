@@ -1,189 +1,18 @@
 
-/* устанавливаем слой затемнения фона,
-  ** опрделяем позиции, цвет и интенсивность затемнения  */
-.black-overlay{
-	display: none;
-	osition: fixed;
-    background-attachment: fixed;
-	top: 0%;
-	left: 0%;
-	width: 100%;
-	height: 100%;
-	background-color: black;
-	z-index:1001;
-	-moz-opacity: 0.7;
-	opacity:.70;
-	filter: alpha(opacity=70);
-}
-/* устанавливаем рисунок основы,
-  ** опрделяем размеры и положение на экране  */
-.envelope {
-	display: none;
-	position: absolute;
-	width: 600px;
-	height: 340px;
-	background: url(/images/envelope.png) center no-repeat;
-	z-index:1002;
-	position: relative;
-	margin: -50% auto;
-}
-/* формируем кнопку закрытия,
-  ** размеры, положение на форме  */
-.close-btn {
-	width: 31px;
-	height: 31px;
-	display: block;
-	cursor: pointer;/* для случая применения отличных от <a> тегов */
-	background: url(/images/close.png);
-	text-indent: -4999px;
-}
-/* кнопка закрытия при наведении */
-.close-btn:hover{
-	background: url(/images/close-hover.png);
-	
-}
-/* оформляем заголовок формы */
-.title {
-	font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
-	font-size:22px;
-	font-weight: normal;
-	font-weight: 200;
-	text-align:left;
-	position: absolute;
-	top: 5px;
-	left: 40px;
-/* можно заменить на другую картинку
-   ** или border-bottom: бла бла бла */	
-	background: url(/images/divider.png) no-repeat bottom;
-	color: #545151;
-	height: 90px;
-	width: 400px;
-	margin: 35px 0;
-	text-shadow: 1px 1px #FFF;/* тень текста */
-}
-/* стили для полей ввода */
-input[type=text] {
-	font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
-	font-size: 13px;
-	background-color:rgb(255,255,255);
-	color: #787474;
-	padding-left: 10px;
-	width:208px;
-	height:33px;
-	border-color:rgb(182,182,182);
-	border-width:1px;
-	border-style:solid;
-	-moz-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
-	-webkit-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
-	box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
-	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
-	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true);
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-}
-/* меняем оформление полей ввода при фокусе */
-input[type=text]:focus, .your-message:focus {
-	outline: none;
-	background-color:rgb(255,255,255);
-	border-color:rgb(126,139,153);
-	border: 1px solid;
-	-moz-box-shadow:0px 0px 5px 0px rgba(168,178,188,0.75) ,0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.4);
-	-webkit-box-shadow:0px 0px 5px 0px rgba(168,178,188,0.75) ,0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.4);
-	box-shadow:0px 0px 5px 0px rgba(168,178,188,0.75) ,0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.4);
-	-ms-filter:"progid:DXImageTransform.Microsoft.Glow(Color=#bfa8b2bc,Strength=5)
-		progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
-	filter:progid:DXImageTransform.Microsoft.Glow(Color=#bfa8b2bc,Strength=5)
-		progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true);
-}
-
-.your-name {
-	position: absolute;
-	top: 150px;
-	left: 40px;
-}
-
-.email-address {
-	position: absolute;
-	top: 210px;
-	left: 40px;
-}
-/* оформляем кнопку отправки */
-.send-message {
-    background-color: #929FAB;
-	background-image:-moz-linear-gradient(49% 0% -90deg,rgb(171,181,191) 0%,rgb(124,138,152) 100%); 
-	background-image:-webkit-gradient(linear,49% 0%,49% 109%,color-stop(0, rgb(171,181,191)),color-stop(1, rgb(124,138,152)));
-	background-image:-webkit-linear-gradient(-90deg,rgb(171,181,191) 0%,rgb(124,138,152) 100%);
-	background-image:-o-linear-gradient(-90deg,rgb(171,181,191) 0%,rgb(124,138,152) 100%);
-	background-image:-ms-linear-gradient(-90deg,rgb(171,181,191) 0%,rgb(124,138,152) 100%);
-	background-image:linear-gradient(-90deg,rgb(171,181,191) 0%,rgb(124,138,152) 100%);
-	width:130px;
-	height:35px;
-	-moz-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 3px rgb(97,108,122);
-	-webkit-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 3px rgb(97,108,122);
-	box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 3px rgb(97,108,122);
-	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffabb5bf,endColorstr=#ff7c8a98,GradientType=0)
-	progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffabb5bf,endColorstr=#ff7c8a98,GradientType=0)
-	progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true); 
-	color: #fff;
-	font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
-	font-size: 13px;
-	text-shadow: 0 1px 0 #21405D;
-	font-weight: bold;
-	border: none;
-	cursor: pointer;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	position: absolute;
-	top: 269px;
-	right: 100px;
-}
-/* оформляем кнопку отправки при наведении */
-.send-message:hover{
-    background-color: #A0ACB9;
-	background-image:-moz-linear-gradient(49% 0% -90deg,rgb(170,181,195) 0%,rgb(144,157,169) 100%); 
-	background-image:-webkit-gradient(linear,49% 0%,49% 109%,color-stop(0, rgb(170,181,195)),color-stop(1, rgb(144,157,169)));
-	background-image:-webkit-linear-gradient(-90deg,rgb(170,181,195) 0%,rgb(144,157,169) 100%);
-	background-image:-o-linear-gradient(-90deg,rgb(170,181,195) 0%,rgb(144,157,169) 100%);
-	background-image:-ms-linear-gradient(-90deg,rgb(170,181,195) 0%,rgb(144,157,169) 100%);
-	background-image:linear-gradient(-90deg,rgb(170,181,195) 0%,rgb(144,157,169) 100%);
-	width:130px;
-	height:35px;
-	-moz-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 3px rgb(97,108,122);
-	-webkit-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 3px rgb(97,108,122);
-	box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 3px rgb(97,108,122);
-	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffaab5c3,endColorstr=#ff909da9,GradientType=0)
-	progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffaab5c3,endColorstr=#ff909da9,GradientType=0)
-	progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true);
-}
-/* оформляем кнопку отправки в режиме активной */
-.send-message:active{
-	background-image:-moz-linear-gradient(49% 0% -90deg,rgb(142,154,167) 0%,rgb(124,138,152) 100%); 
-	background-image:-webkit-gradient(linear,49% 0%,49% 109%,color-stop(0, rgb(142,154,167)),color-stop(1, rgb(124,138,152)));
-	background-image:-webkit-linear-gradient(-90deg,rgb(142,154,167) 0%,rgb(124,138,152) 100%);
-	background-image:-o-linear-gradient(-90deg,rgb(142,154,167) 0%,rgb(124,138,152) 100%);
-	background-image:-ms-linear-gradient(-90deg,rgb(142,154,167) 0%,rgb(124,138,152) 100%);
-	background-image:linear-gradient(-90deg,rgb(142,154,167) 0%,rgb(124,138,152) 100%);
-	width:130px;
-	height:35px;
-	-moz-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 5px rgb(65,73,85);
-	-webkit-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 5px rgb(65,73,85);
-	box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 5px rgb(65,73,85);
-	-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff8e9aa7,endColorstr=#ff7c8a98,GradientType=0)
-	progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff8e9aa7,endColorstr=#ff7c8a98,GradientType=0)
-	progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true);
-}
-
                 /* КНОПКА*/
 
-#popup__toggle{bottom:75px;right:10px;position:fixed;}
+#popup__toggle{bottom:55px;right:-8px;position:fixed;}
+/************************************************************/
+#popup__toggle-mail{bottom:200px;right:-8px;position:fixed;}
+/************************************************************/
 .img-circle{background-color:#29AEE3;box-sizing:content-box;-webkit-box-sizing:content-box;}
 .circlephone{box-sizing:content-box;-webkit-box-sizing:content-box;border: 2px solid #29AEE3;width:150px;height:150px;bottom:-25px;right:10px;position:absolute;-webkit-border-radius:100%;-moz-border-radius: 100%;border-radius: 100%;opacity: .5;-webkit-animation: circle-anim 2.4s infinite ease-in-out !important;-moz-animation: circle-anim 2.4s infinite ease-in-out !important;-ms-animation: circle-anim 2.4s infinite ease-in-out !important;-o-animation: circle-anim 2.4s infinite ease-in-out !important;animation: circle-anim 2.4s infinite ease-in-out !important;-webkit-transition: all .5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all 0.5s;}
 .circle-fill{box-sizing:content-box;-webkit-box-sizing:content-box;background-color:#29AEE3;width:100px;height:100px;bottom:0px;right:35px;position:absolute;-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;border: 2px solid transparent;-webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;-moz-animation: circle-fill-anim 2.3s infinite ease-in-out;-ms-animation: circle-fill-anim 2.3s infinite ease-in-out;-o-animation: circle-fill-anim 2.3s infinite ease-in-out;animation: circle-fill-anim 2.3s infinite ease-in-out;-webkit-transition: all .5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all 0.5s;}
 .img-circle{box-sizing:content-box;-webkit-box-sizing:content-box;width:72px;height:72px;bottom: 14px;right: 49px;position:absolute;-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;border: 2px solid transparent;opacity: .7;}
 .img-circleblock{box-sizing:content-box;-webkit-box-sizing:content-box;width:72px;height:72px;background-image:url(/images/mini.png);background-position: center center;background-repeat:no-repeat;animation-name: tossing;-webkit-animation-name: tossing;animation-duration: 1.5s;-webkit-animation-duration: 1.5s;animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;}
+/***********************************************************/
+.img-circleblock-mail{box-sizing:content-box;-webkit-box-sizing:content-box;width:72px;height:72px;background-image:url(/images/mail.png);background-position: center center;background-repeat:no-repeat;animation-name: tossing;-webkit-animation-name: tossing;animation-duration: 1.5s;-webkit-animation-duration: 1.5s;animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;}
+/***********************************************************/
 .img-circle:hover{opacity: 1;}
 @keyframes pulse {0% {transform: scale(0.9);opacity: 1;}
   50% {transform: scale(1); opacity: 1; }   
@@ -232,3 +61,209 @@ opacity: .1;}}
   0% {transform: rotate(0deg) scale(0.7) skew(1deg);opacity: .2;}
   50% {transform: rotate(0deg) scale(1) skew(1deg);opacity: .2;}
   100% {transform: rotate(0deg) scale(0.7) skew(1deg);opacity: .2;}}
+
+/*******************************МОЯ ФОРМА**************************************/
+.overlay {
+	background: #000;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 1000;
+	opacity: .8;
+}
+.visible {
+	background: linear-gradient(to bottom, #0e3890, #52b2fa);
+    ackground: #fff;
+    border-radius: 8px;
+	position: fixed;
+	left: 45%;
+	top: 50%;
+	margin-top: -200px;
+	overflow: hidden;
+	z-index: 2000;
+	width: 600px;
+	padding: 0px;
+	margin-left: -250px;
+    box-shadow: inset 0 1px 0 0 #3f3ba3;
+}
+.close_b{
+    display:block;
+    background: #fff;
+    border-radius:7px;
+    width:28px;
+    height:30px;
+    float:right;
+    background-image:url(/images/close_b.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.close_b:hover {
+	opacity:.85;
+	cursor: pointer; 
+}
+
+
+.visible h2 {
+	text-align: center;
+	}
+.content {
+	padding: 0 1em;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	background: WhiteSmoke;
+}
+/***************************************/
+
+/* === Шрифты для формы и общая ширина === */
+
+.content h2, .content label {font-family:Georgia, Times, "Times New Roman", serif;}
+.form_hint, .required_notification {font-size: 15px;}
+
+/* === Размер и расположение блоков === */
+
+.content label {
+	width:110px;
+	margin-top: 3px;
+	display:inline-block;
+	float:left;
+	padding:3px;
+}
+
+.content input {
+	font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
+	font-size: 13px;
+	padding-left: 10px;
+	width:208px;
+	height:33px;
+	border-width:1px;
+	border-style:solid;
+	-moz-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+    background:#ffffff;
+}
+.content textarea {
+    font-family: "Trebuchet MS",Tahoma,Arial,sans-serif;
+	font-size: 13px;
+	padding-left: 10px;
+    padding:8px; 
+    width:300px;
+	border-style:solid;
+	-moz-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	box-shadow:0px 1px 0px 0px rgba(255,255,255,0.5) ,inset 0px 1px 2px 0px rgba(0,0,0,0.2);
+	-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true)";
+	filter:progid:DXImageTransform.Microsoft.dropshadow(OffX = 0,OffY = 1,Color = #80ffffff,Positive = true);
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+
+	/* Цвета и эффекты */
+	.content input, .content textarea { 
+		border:1px solid #aaa;
+		box-shadow: 0px 0px 3px #2654b5, 0 10px 15px #b3c5ee inset;
+		border-radius:2px;
+		padding-right:30px;
+		-moz-transition: padding .25s; 
+		-webkit-transition: padding .25s; 
+		-o-transition: padding .25s;
+		transition: padding .25s;
+        background:#ffffff;
+	}
+	.content input:focus, .content textarea:focus { 
+		border:1px solid ; 
+		box-shadow: 0 0 3px #fff; 
+		padding-right:70px;
+        background:#ffffff;
+	}
+
+
+/* === Стили подсказок === */
+.form_hint {
+	background: #f17805;
+	border-radius: 3px;
+	color: white;
+    width:150px;
+	margin-left:8px;
+	padding: 6px ;
+	z-index: 999; /* подсказки поверх всех элементов */
+	position: absolute; /* правильное отображение, если подсказка в 2 строки */
+	display: none;
+}
+.form_hint::before {
+	content: "\25C0";
+	color:#d45252;
+	position: absolute;
+	top:1px;
+	left:-6px;
+}
+
+.content input:required:valid {
+	background: #fff no-repeat 98% center;
+}
+.content input:focus:invalid {
+    background: #fff no-repeat 98% center;
+}
+
+.content input:required, .content textarea:required {
+	background: #fff no-repeat 98% center;
+}
+
+.content input:focus + .form_hint {display: inline;}
+.content input:required:valid + .form_hint {background: #28921f;}
+.content input:required:valid + .form_hint::before {color:#28921f;}
+	
+/* === Оформление кнопки === */
+button.submit {
+    float: right;
+    line-height: 20px;
+    margin: 1.2em;
+	background-color:#fb820f;
+	background: -webkit-gradient(linear, left top, left bottom, from(#f34a0a), to(#f5940e));
+	background: -webkit-linear-gradient(top, #f34a0a, #f5940e);
+	background: -moz-linear-gradient(top, #f34a0a, #f5940e);
+	background: -ms-linear-gradient(top, #f34a0a, #f5940e);
+	background: -o-linear-gradient(top, #f34a0a, #f5940e);
+	background: linear-gradient(top, #f34a0a, #f5940e);
+	border: 1px solid #f2770f;
+	border-bottom: 1px solid #5b992b;
+	border-radius: 3px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	box-shadow: inset 0 1px 0 0 #f34a0a;
+	-webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+	-moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+	-o-box-shadow: 0 1px 0 0 #9fd574 inset;
+	color: white;
+	font-weight: bold;
+	padding: 6px 20px;
+	text-align: center;
+	text-shadow: 0 -1px 0 #396715;
+}
+button.submit:hover {
+	opacity:.85;
+	cursor: pointer; 
+}
+button.submit:active {
+	border: 1px solid #d1530a;
+	box-shadow: 0 0 10px 5px #d1530a inset; 
+	-webkit-box-shadow:0 0 10px 5px #d1530a inset ;
+	-moz-box-shadow: 0 0 10px 5px #d1530a inset;
+	-ms-box-shadow: 0 0 10px 5px #d1530a inset;
+	-o-box-shadow: 0 0 10px 5px #d1530a inset;
+}
+
+#star{
+    color:red;
+    font-size:12px;
+}

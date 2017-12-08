@@ -7,14 +7,17 @@
     height: 180px;
     padding: 0px;
     overflow-x: hidden;
+    
 }
 
 #shap {
     margin: 0 0 0 50px;
+    margin-left:10%;
 }
 #shap div {
     float:left;
     margin-top: 30px;
+   
     padding-left: 40px;
     
 }
@@ -79,7 +82,7 @@ body {
 }
 #body_t{
     width: 883px;
-    margin-left:200px;
+    margin-left:22%;
 }
                     /* Подвал */
 #substrate-footer {

@@ -72,7 +72,7 @@
      <a href="#"><div id="catalog"><center><br><br>Доильное оборудование<div id="cat"><img src="\images\cat4.png"></div></center></div> </a>
      <a href="#"><div id="catalog"><center><br><br>Расходные материалы<div id="cat"><img src="\images\cat1.png"></div></center></div></a>
      <a href="#"><div id="catalog"><center><br><br>Содержание животных<div id="cat"><img src="\images\cat2.png"></div></center></div></a>
-     <a href="#"><div id="catalog"><center><br><br>Гарантийное обслуживание<div id="cat"><img src="\images\cat9.png"></div></center></div></a>
+     <a href="/Pages/Services.aspx"><div id="catalog"><center><br><br>Гарантийное обслуживание<div id="cat"><img src="\images\cat9.png"></div></center></div></a>
      
 
     <p style=" font-size: 23px; color:#000000; font-weight:bold; margin-left:40px; padding-top:0px; font-style:italic;">

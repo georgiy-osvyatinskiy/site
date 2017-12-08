@@ -206,6 +206,7 @@
     <Content Include="images\clearan.jpg" />
     <Content Include="images\close-hover.png" />
     <Content Include="images\close.png" />
+    <Content Include="images\close_b.png" />
     <Content Include="images\datamars.jpg" />
     <Content Include="images\default-thumb.jpg" />
     <Content Include="images\divider.png" />
@@ -221,6 +222,7 @@
     <Content Include="images\jourdain.jpg" />
     <Content Include="images\kvk_hydra_klov.jpg" />
     <Content Include="images\la_buvette.jpg" />
+    <Content Include="images\mail.png" />
     <Content Include="images\Marker2.png" />
     <Content Include="images\mini.png" />
     <Content Include="images\Munters-protect.jpg" />
